@@ -1,7 +1,14 @@
 {
+  "scripts": {
+    "start:build": "npx tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
   "dependencies": {
     "@faker-js/faker": "^9.6.0",
     "@types/node": "^22.13.9",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9",
     "typescript": "^5.8.2"
   },
   "devDependencies": {
