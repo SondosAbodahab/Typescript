@@ -1,5 +1,8 @@
-export class NumbersCollection{
+import { Sorter } from "./Sorter";
+
+export class NumbersCollection extends Sorter{
     constructor(public data:number[]){
+        super()
     }
     // getter to treat it as a property not as a function
     // .length  not .length()
