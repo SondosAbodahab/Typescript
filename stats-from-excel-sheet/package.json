@@ -1,0 +1,18 @@
+{
+  "name": "stats-from-excel-sheet",
+  "version": "1.0.0",
+  "scripts": {
+    "start:build": "npx tsc -w",
+    "start:start": "nodemon build/index.js",
+    "start" : "concurrently npm:start:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9",
+    "typescript": "^5.8.2"
+  }
+}
