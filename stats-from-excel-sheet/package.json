@@ -4,13 +4,14 @@
   "scripts": {
     "start:build": "npx tsc -w",
     "start:start": "nodemon build/index.js",
-    "start" : "concurrently npm:start:*"
+    "start": "concurrently npm:start:*"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@types/node": "^22.13.10",
     "concurrently": "^9.1.2",
     "nodemon": "^3.1.9",
     "typescript": "^5.8.2"
