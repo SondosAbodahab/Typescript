@@ -1,11 +1,9 @@
-// import { User } from "./User";
+import { User } from "./User";
 
-// const user = new User({ id: 1 });
+const user = new User({ id: 1,name:'newer name' ,age:0});
 
-// user.set({ name: "SONDOS" });
+user.on('save',()=>{
+    console.log(user);
+})
 
-// user.save();
-
-// const user2 = new User({ name: "Laila" });
-
-// user2.save();
+user.save()
