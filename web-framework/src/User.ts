@@ -11,15 +11,6 @@ export class User {
   public events:Eventing = new Eventing()
   public Sync:Sync<UserProps> = new Sync<UserProps>(rootUrl)
 
-  constructor(private data: UserProps) {}
-
-  get(propName: string): number | string {
-    return this.data[propName];
-  }
-
-  set(userProps: Partial<UserProps>): void {
-    Object.assign(this.data, userProps);
-  }
   
 
   
